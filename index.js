@@ -1,1 +1,7 @@
-console.log(`Prueba`);
+console.log(`Prueba3`);
+
+const base = 2;
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`${base} * ${i} = ${base * i}`);
+}
