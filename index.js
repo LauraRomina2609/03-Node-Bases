@@ -1,8 +1,5 @@
 const fs = require('fs');
-const multiplicador = require(`./`)
-
-console.log(`Prueba3`);
-
+const multiplicador = require(`./`);
 
 const base = 3;
 
