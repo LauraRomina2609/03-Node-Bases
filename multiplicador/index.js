@@ -1,4 +1,4 @@
-
+const fs = require('fs');
 
 const multiplicar = (base) => {
     console.log(`==================`);
