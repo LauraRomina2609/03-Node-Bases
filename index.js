@@ -1,5 +1,5 @@
 const fs = require('fs');
-const multiplicador = require(`./multiplicador`);
+const {multiplicar} = require(`./multiplicador`);
 
 const base = 3;
 
