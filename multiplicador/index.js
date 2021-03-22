@@ -7,10 +7,13 @@ const multiplicar = (base) => {
     console.log(`==================`);
 
     const resultado = logica(base);
-
-    
+        
     console.log(resultado);
-    fs.writeFileSync(`tablas/tabla-del-${base}`, resultado);
+    const nombreArchivo = `tablas/tabla-del-${base}`
+    fs.writeFile(`tablas/${nombreArchivo}`, resultado, (err) => {
+        if (err) throw err;
+        console.log(`El archivo ${NombreArchivo} fue creado`);
+      });
 }
 
 module.exports = {
