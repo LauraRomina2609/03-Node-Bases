@@ -9,7 +9,7 @@ const multiplicar = (base) => {
     const resultado = logica(base);
         
     console.log(resultado);
-    const nombreArchivo = `tablas/tabla-del-${base}`
+    const nombreArchivo = `tabla-del-${base}`
     fs.writeFile(`tablas/${nombreArchivo}`, resultado, (err) => {
         if (err) throw err;
         console.log(`El archivo ${NombreArchivo} fue creado`);
