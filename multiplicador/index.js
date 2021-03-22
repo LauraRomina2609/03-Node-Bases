@@ -12,7 +12,7 @@ const multiplicar = (base) => {
     const nombreArchivo = `tabla-del-${base}`
     fs.writeFile(`tablas/${nombreArchivo}`, resultado, (err) => {
         if (err) throw err;
-        console.log(`El archivo ${NombreArchivo} fue creado`);
+        console.log(`El archivo ${nombreArchivo} fue creado`);
       });
 }
 
