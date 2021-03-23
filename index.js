@@ -1,9 +1,7 @@
-const argv = requiere(`yargs`).argv;
-
+const argv = require(`yargs`).argv;
+const {multiplicar} = require("./multiplicador");
 
 console.log(argv);
-
-const {multiplicar} = require(`./multiplicador`);
 
 const base = 5;
 
