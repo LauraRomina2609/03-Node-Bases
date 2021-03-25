@@ -1,6 +1,6 @@
 const argv = require(`yargs`)
 
-            .option(`b`, {
+            .options(`b`, {
             alias: `base`,
             type: `number`,
             demandOption: true,
@@ -10,8 +10,4 @@ const argv = require(`yargs`)
             .argv;
 const {multiplicar} = require(`./multiplicador`);
 
-console.log(argv);
-
-const base = 5;
-
-multiplicar(base);
+multiplicar(argv.b);
