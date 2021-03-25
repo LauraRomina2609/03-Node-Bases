@@ -7,6 +7,13 @@ const argv = require(`yargs`)
             describe: `es la base de la tabla`
             })
 
+            .check((argv, options) => {
+                if (isNaN(argv.b)) {
+                  throw new Error(`La base tiene que ser un número.`)
+                }
+                return true 
+              })
+
             .argv;
 const {multiplicar} = require(`./multiplicador`);
 
