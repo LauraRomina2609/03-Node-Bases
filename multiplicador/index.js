@@ -1,3 +1,4 @@
+const colors  = require ( `colors`) ; 
 const fs = require('fs');
 const {logica} = require(`./logica`);
 
@@ -13,10 +14,10 @@ const multiplicar = (base, limite, visualizar) => {
         }
         
     
-    const nombreArchivo = `tabla-del-${base}.txt`
+    const nombreArchivo = `tabla-del-${base.rainbow}.txt`
     fs.writeFile(`tablas/${nombreArchivo}`, resultado, (err) => {
         if (err) throw err;
-        console.log(`El archivo ${nombreArchivo} fue creado`);
+        console.log(`El archivo ${nombreArchivo} fue creado!`.rainbow);
       });
 }
 
