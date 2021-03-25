@@ -7,6 +7,14 @@ const argv = require(`yargs`)
             describe: `es la base de la tabla`
             })
 
+            .options(`l`, {
+              alias: `limite`,
+              type: `number`,
+              demandOption: false,
+              default: 10,
+              describe: `es el límite del multiplicador`
+              })
+
             .check((argv, options) => {
                 if (isNaN(argv.b)) {
                   throw new Error(`La base tiene que ser un número.`)
@@ -17,4 +25,4 @@ const argv = require(`yargs`)
             .argv;
 const {multiplicar} = require(`./multiplicador`);
 
-multiplicar(argv.b);
+multiplicar(argv.b, argv.l);

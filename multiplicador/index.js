@@ -1,12 +1,12 @@
 const fs = require('fs');
 const {logica} = require(`./logica`);
 
-const multiplicar = (base) => {
+const multiplicar = (base, limite) => {
     console.log(`==================`);
     console.log(`Tabla del ${base}`); 
     console.log(`==================`);
 
-    const resultado = logica(base);
+    const resultado = logica(base, limite);
         
     console.log(resultado);
     const nombreArchivo = `tabla-del-${base}.txt`
