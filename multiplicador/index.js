@@ -3,9 +3,9 @@ const {logica} = require(`./logica`);
 
 const multiplicar = (base, limite, visualizar) => {
     
-    const resultado = logica(base, limite, visualizar);
+    const resultado = logica(base, limite);
     
-    if visualizar {
+    if (visualizar){
         console.log(`==================`);
         console.log(`Tabla del ${base}`); 
         console.log(`==================`);
