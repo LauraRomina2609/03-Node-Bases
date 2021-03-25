@@ -23,7 +23,10 @@ const argv = require(`yargs`)
                 describe: `muestra tabla en la consola`
                 })
 
-                 
+                .help()
+
+                .version()
+         
             .check((argv, options) => {
                 if (isNaN(argv.b)) {
                   throw new Error(`La base tiene que ser un número.`)
@@ -32,12 +35,8 @@ const argv = require(`yargs`)
               })
 
             .argv;
-            
-            .help()
-
-            .version()
-
+                        
 
             const {multiplicar} = require(`./multiplicador`);
 
-multiplicar(argv.b, argv.l);
+multiplicar(argv.b, argv.l, argv.v);
