@@ -12,6 +12,7 @@
 * Utilizamos los paquetes de Yargs y Colors
 
 ```Para correr este código deberias ejecutar npm install
+
 ```Opciones:
 -b, --base         es la base de la tabla                  [número] [requerido]
 -l, --limite       es el límite del multiplicador        [número] [defecto: 10]
