@@ -7,9 +7,9 @@ const multiplicar = (base, limite, visualizar) => {
     const resultado = logica(base, limite);
     
     if (visualizar){
-        console.log(`==================`);
+        console.log(`==================`.green);
         console.log(`Tabla del ${base}`); 
-        console.log(`==================`);
+        console.log(`==================`.green);
         console.log(resultado);
         }
         
